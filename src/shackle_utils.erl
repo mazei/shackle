@@ -27,7 +27,8 @@ lookup(Key, List, Default) ->
 
 random(1) -> 1;
 random(N) ->
-    granderl:uniform(N).
+%%    granderl:uniform(N).
+    quickrand:uniform(N).
 
 -spec random_element([term()]) ->
     term().
